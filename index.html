@@ -2,26 +2,35 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Actividad</title>
 </head>
 <body background="foto.png">
+
 	<style >
+	.nombre{
+		   	position: absolute;
+    	top: 310px;
+    	left: 160px;
+    	border: solid white 2px;
+    	width: 200px;
+    	height: 40px;
+	}
 	.cua{
     	position: absolute;
    		top: 50px;
    		left: 350px;
-   		border: solid black 5px;
+   		border: solid white 5px;
    		width: 500px;
    		height: 250px;
-   		background: #E3C2F8;
+   		background: #D8C7F4;
     }
 
     .lola{
     	position: absolute;
     	top: 160px;
-    	left: 160px;
-    	border: solid black 2px;
-    	width: 200px;
+    	left: 130px;
+    	border: solid white 2px;
+    	width: 250px;
     	height: 40px;
     
     }
@@ -29,44 +38,58 @@
     	position: absolute;
   		top: 0px;
    		left: 600px;
-   		border: solid black 5px;
+   		border: solid whita 5px;
    		width: 200px;
    		height: 250px;
    		font-size: 25px;
-   		background: #D5E2E9;
+   		background: #FFCDA3;
     }
+
 	</style>
 	<div class="cua">
+		 	<script>
+	function calcu(){
+	h=dato1.value
+	l=Number(dato2.value);
+	p=Number(dato3.value);
+	j=Number(dato4.value);
+	producto=p*l;
+	resul=producto-j;
+			eje.innerHTML="compraste "+p+"de "+h +"a "+producto+"se te devuelve "+resul;
+
+	}
+	
+ 	</script>
+ 
 	<form> 
 		<center>
-		<label>•Tienda sarico•</label>
+		<label>•supermercado juanita•</label>
 		<br>
-		<label>•Papitas:  3500</label>
+		<label>•Papitas:  3500•</label>
         <br>
-		<label>•Chocolate:  2000</label>
+		<label>•Chocolate:  2000•</label>
 		<br>
-		<label>•Doritos:  1000</label>
+		<label>•Doritos:  1000•</label>
 		<br>
-		<input type="text" id="dato1" placeholder="Producto">
-		<input type="text" id="dato2" placeholder="Precio">
-		<input type="text" id="dato3" placeholder="Cantidad">
-		<input type="text" id="dato4" placeholder="Mi dinero">
-		<div class="lola" onclick="calcu()" id="ejec">•Ejecutar•</div>
+		<input type="text" id="dato1" placeholder="Ingresa el Producto">
+		<input type="text" id="dato2" placeholder="Ingresa el Precio">
+		<input type="text" id="dato3" placeholder="Ingresa la Cantidad">
+		<input type="text" id="dato4" placeholder="ingresa tu dinero">
+		
 
 		<div class="loli">
-		<form> 
 		<center>
-		<label>•Alacena•</label>
+		<label>•produstos•</label>
 		<br>
-		<label>Papitas:  10</label>
+		<label>•Papitas:  10•</label>
         <br>
-		<label>Chocolate:  10</label>
+		<label>•Chocolate:  10•</label>
 		<br>
-		<label>Doritos:  10</label>
+		<label>•Doritos:  10•</label>
 		</div>
 
 	</center>
+	<div class="lola" onclick="calcu()" id="eje">total UwU</div>
 	</form>
- 
 </body>
 </html>
